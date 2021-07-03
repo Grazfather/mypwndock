@@ -3,6 +3,7 @@ FROM grazfather/pwndock:latest
 # GEF
 RUN cd ~/tools \
     && git clone --depth 1 https://github.com/hugsy/gef.git \
+    && git clone --depth 1 https://github.com/hugsy/gef-extras.git \
     && echo "source ~/tools/gef/gef.py" > ~/.gdbinit
 
 # Install dotfiles
